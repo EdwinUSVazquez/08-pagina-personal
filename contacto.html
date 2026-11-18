@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Edwin Uriel SV">
+    <meta name="description" content="Pagina de contacto">
+    <meta name="keywords" content="portafolio, contacto, proyectos, tecnologia">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="imagenes/Logo.png" type="image/x-icon">
+    
+    <title>Contacto - Mi Portafolio</title>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg bg-danger-subtle py-0 fixed-top">
+        <nav class="container">
+            <a class="navbar-brand" href="index.html#inicio"> 
+                <img src="imagenes/logo.png" alt="Logo" class="d-inline-block align-text-middle logotipo"> 
+                Mi Portafolio personal
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html#inicio"> Inicio </a>
+                    <a class="nav-link" href="index.html#sobre-mi"> ¿Quien soy? </a>
+                    <a class="nav-link" href="index.html#proyectos"> Trabajos </a>
+                    <a class="nav-link" href="index.html#hobbies"> Pasatiempos </a>
+                    <a class="nav-link" href="contacto.html"> Contacto personal </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="contacto" class="container py-5">
+        <h1 class="display-4 fw-bold text-center text-danger"> Contáctame </h1>
+        <p class="fs-5 text-center"> ¡Envíame un mensaje a mi contacto! </p>
+        <div class="row py-4">
+            <article class="col-lg-6 mb-4">
+                <h2 class="fw-bold"> Disponibilidad completa </h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label"> Nombre </label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="correo" class="form-label"> Correo electrónico </label>
+                        <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label"> Mensaje </label>
+                        <textarea class="form-control" id="mensaje"name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Enviar mensaje
+                    </button>
+                </form>
+            </article>
+            <article class="col-lg-6 mb-4">
+                <h2 class="fw-bold"> Mi ubicación</h2>
+                <iframe src="https://www.google.com/maps/place/Universidad+Tecnol%C3%B3gica+de+Le%C3%B3n/@21.0607609,-101.5773056,14.49z/data=!4m6!3m5!1s0x842b963652f40f0d:0xa7d88da0ad8eff8a!8m2!3d21.0636171!4d-101.5816488!16s%2Fg%2F11bwdqj7w2?entry=ttu&g_ep=EgoyMDI2MTExNi4wIKXMDSoASAFQAw%3D%3D" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></>
+            </article>
+        </div>
+    </section>
+
+
+<footer class="container-fluid bg-danger text-light text-center">
+   <p class="py-3 h5">copyright 2026  Edwin Uriel SV</p>
+</footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

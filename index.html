@@ -1,0 +1,314 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <link rel="shortcut icon" href="imagenes/logo.svg" type="image/x-icon">
+    
+    <title>Mi portafolio personal</title>
+</head>
+<body>
+
+    <header class="navbar navbar-expand-lg bg-danger-subtle py-0 fixed-top">
+    <nav class="container">
+        <a class="navbar-brand" href="#inicio">
+          <img src="imagenes/logo.svg" alt="Logo" class="d-inline-block align-text-middle logotipo">
+                Mi Portafolio personal
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#inicio">Inicio</a>
+                <a class="nav-link" href="#sobre-mi">Quien soy</a>
+                <a class="nav-link" href="#proyectos">Trabajos</a>
+                <a class="nav-link" href="#hobbies">Pasatiempos</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+<section id="inicio" class="container py-5">
+    <h1 class="display-4 fw-bold text-center text-black -danger ">
+        Bienvenidos a mi portafolio personal
+    </h1>
+    <p class="text-center"> Conoce sobre mi</p>
+</section>
+
+
+<section id="sobre-mi" class="container py-5">
+    <div class="row">
+        <figure class="col-lg-6 col-md-10 offset-md-0">
+            <img src="imagenes/Perfil.jpeg" alt="Fotografia personal" class="img-fluid rounded foto-perfil">
+        </figure>
+
+        <article class="col-lg-6 col-md-10 offset-md-0 text-center text-lg-start pt-lg-5">
+            <h1 class="display-4 fw-bold bg-white table-danger"> Sobre mí </h1>
+            <p> Soy respetuoso, Creativo y me gusta mucho modelar en blender para crear modelos 3D de varios objetos u escenarios y poder animarlos desde cero. </p>
+            <p id="parrafo" class="collapse d-lg-block"> Soy bueno para animar objetos fijos pero tambien me gustaria saber animar con movimientos a personajes para generar alguna video o animacion hehca por mi.</p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#parrafo" role="button" aria-expanded="false" aria-controls="parrafo">
+                Leer más...
+            </a>
+        </article>
+    </div>
+</section>
+
+
+<section id="proyectos" class="container py-5">
+    <h1 class="display-4 fw-bold text-center "> Mis Proyectos en el cuatrimestre </h1>
+    <div class="row">
+        <article class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 mb-3">
+            <div class="card">
+                <img src="imagenes/Lata.jpeg" class="card-img-top" alt="Lata">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-center"> Creando mi primer modelo 3D </h5>
+                    <p class="card-text text-center"> Este fue el primer trabajo que realize en blender</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#proy_electronica"> Ver proyecto </a>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 mb-3">
+            <div class="card">
+                <img src="imagenes/2D.jpeg" class="card-img-top" alt="2D">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-center"> Animacion en 2D </h5>
+                    <p class="card-text text-center">Un proyecto realizado en equipo en 2D hecho a mano. </p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#proy_pinzas"> 
+                        Ver proyecto
+                    </a>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 mb-3">
+            <div class="card">
+                <img src="imagenes/Objetos.jpeg" class="card-img-top" alt="Objetos">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-center"> Modelado de varios objetos cotidianos. </h5>
+                    <p class="card-text text-center"> En este proyecto nos pidieron hacer estos objetos en 3D.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#proy_fotos">
+                        Ver proyecto
+                    </a>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+
+<div class="modal fade" id="proy_electronica" tabindex="-1" aria-labelledby="Lata" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 fw-bold" id="Lata"> Lata en blender </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+            </div>
+            <div class="modal-body">
+                <p>En este proyecto cree una lata en 3D con principalmente un ciclindro.</p>
+                <p>Gracias a este primer trabajo logre entender mis errores para corregirlos mas adelante en la materia de modelado 3D.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cerrar </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="proy_pinzas" tabindex="-1" aria-labelledby="Video2D" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 fw-bold" id="Video2D"> Produccion de video 2D </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+            </div>
+            <div class="modal-body">
+                <p>Ente proyecto fue en equipos y fue muy tardado de realizarse debido a que todo era a mano. </p>
+                <p>Con esto aprendi los principios de los fotogramas, como funcionan y porque son importantes.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary"  data-bs-dismiss="modal"> Cerrar </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="proy_fotos" tabindex="-1" aria-labelledby="Modelados" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 fw-bold" id="Modelados"> Modelado de objetos </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+            </div>
+            <div class="modal-body">
+                <p> En este trabajo fue mas complejo porque eran varios objetos mas dificiles de modelar y tambien con mas estructuras. </p>
+                <p> Con este trabajo aprendi como realizar estructuras mas complejas y mas iguales a las referencias tomadas. </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cerrar </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="habilidades" class="container py-5">
+    <div class="row align-items-center">
+        <div class="col-lg-8">
+            <p class="text-uppercase text-secondary fs-5 mb-0"> Lo que sé hacer </p>
+            <h1 class="display-5 fw-bold text-uppercase">  habilidades </h1>
+            <hr class=border-danger border-3 opacity-100 mt-2 mb-5" style="width: 60px;">
+            <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="text-danger mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M3 17l5-5 4 4 3-3 6 5"/></svg></div>
+                <h2 class="h5 text-uppercase fw-bold"> Photoshop </h2>
+                <p class="text-secondary"> Se editar y restauras imagenes antiguas y tambien recientes. </p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="text-danger mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12L4 7.5M12 12v9"/></svg></div>
+                <h2 class="h5 text-uppercase fw-bold"> Modelado 3D </h2>
+                <p class="text-secondary"> Modelar objetos en 3D con texturas realistas. </p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="text-danger mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10v4h3l8 4V6L6 10z"/><path d="M17 9a4 4 0 0 1 0 6M19.5 6.5a8 8 0 0 1 0 11"/></svg></div>
+                <h2 class="h5 text-uppercase fw-bold"> Creacion de publicidad </h2>
+                <p class="text-secondary"> Hacer carteles publicitarios para productos o paginas web </p>
+            </div>
+            </div>
+        </div>
+        <figure class="col-lg-4 text-center">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Blender_4.3.2_screenshot.png?width=900" alt="Modelado 3D en Blender" class="img-fluid rounded">
+        </figure>
+    </div>
+</section>
+
+<section id="herramientas" class="container-fluid p-0">
+    <div class="row g-0">
+        <div class="col-lg-6 bg-light px-4 px-lg-5 py-5">
+            <ul class="nav nav-underline mb-5" id="tabsHerramientas" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active text-uppercase text-dark" id="tab-hardware" data-bs-toggle="tab" data-bs-target="#panel-hardware" type="button" role="tab" aria-controls="panel-hardware" aria-selected="true"> Paginas web </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-uppercase text-dark" id="tab-software" data-bs-toggle="tab" data-bs-target="#panel-software" type="button" role="tab" aria-controls="panel-software" aria-selected="false"> Fotofrafia </button>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="panel-hardware" role="tabpanel" aria-labelledby="tab-hardware" tabindex="0">
+                    <div class="d-flex mb-5">
+                        <div class="text-danger me-4"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></svg></div>
+                        <div>
+                            <h3 class="h5 text-uppercase fw-bold"> Estructuras de las paginas  </h3>
+                            <hr class="border-danger border-2 opacity-100 my-2" style="width: 40px;">
+                            <p> paginas con estructuras llamativas y funcionales </p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-5">
+                        <div class="text-danger me-4"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.2-6-10a6 6 0 0 1 12 0c0 4.8-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg></div>
+                        <div>
+                            <h3 class="h5 text-uppercase fw-bold"> Informacion escencial </h3>
+                            <hr class="border-danger border-2 opacity-100 my-2" style="width: 40px;">
+                            <p> Toda la informacion como contactos, servicios, ubicacion o informacion que se tenga que estar actualizando </p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-5">
+                        <div class="text-danger me-4"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                        <div>
+                            <h3 class="h5 text-uppercase fw-bold"> Llamar la atencion </h3>
+                            <hr class="border-danger border-2 opacity-100 my-2" style="width: 40px;">
+                            <p> Crear carteles llamativos o estructuras que atraigan a las personas. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="panel-software" role="tabpanel" aria-labelledby="tab-software" tabindex="0">
+                    <div class="d-flex mb-5">
+                        <div class="text-danger me-4"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></div>
+                        <div>
+                            <h3 class="h5 text-uppercase fw-bold"> Posiciones </h3>
+                            <hr class="border-danger border-2 opacity-100 my-2" style="width: 40px;">
+                            <p> Los diferentes angulos para diferentes tipos de fotografia. </p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-5">
+                        <div class="text-danger me-4"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg></div>
+                        <div>
+                            <h3 class="h5 text-uppercase fw-bold"> Edicion </h3>
+                            <hr class="border-danger border-2 opacity-100 my-2" style="width: 40px;">
+                            <p> Edicion de la fotografia, restauracion o de imagenes y fotos. </p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-5">
+                        <div class="text-danger me-4"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2v14a2 2 0 0 0 2 2h14"/><path d="M2 6h14a2 2 0 0 1 2 2v14"/></svg></div>
+                        <div>
+                            <h3 class="h5 text-uppercase fw-bold"> Resolucion </h3>
+                            <hr class="border-danger border-2 opacity-100 my-2" style="width: 40px;">
+                            <p> Agregar mas calidad a imagenes o recortarlas. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center text-white px-4 px-lg-5 py-5" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://commons.wikimedia.org/wiki/Special:FilePath/Blender_3.6-splash_screen.png?width=1400'); background-size: cover; background-position: center; min-height: 400px;">
+            <div>
+                <h2 class="display-5 fw-bold text-uppercase"> Aprendisaje </h2>
+                <hr class="border-light border-2 opacity-100 my-3" style="width: 80px;">
+                <p class="fs-4"> Todo lo aprendido en el cuatrimestre </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="hobbies" class="container py-5">
+    <h1 class="display-4 fw-bold text-center text-danger"> Mis Pasatiempos </h1>
+    <div class="row py-4">
+        <article class="col-lg-6 text-center text-lg-start pt-lg-5">
+            <h2 class="fw-bold"> Mi pasatiempo favorito </h2>
+            <p class="fs-5"> Mi mayor pasatiempo es conducir en mi motocicleta sin rumbo fijo, ir a lugares nuevos y alejados del centro de leon.</p>
+        </article>
+        <figure class="col-lg-6">
+            <video src="videos/video1.mp4" class="w-100 rounded video-hobby" controls> </video>
+        </figure>
+    </div>
+
+</div>
+
+<div class="row py-4">
+    <article class="col-lg-6 text-center text-lg-start pt-lg-5">
+            <h2 class="fw-bold"> Disfrutando del paisaje</h2>
+            <p class="fs-5"> Me gusta manejar por las mañanas o al atardecer para poder sentir al aire fresco y la tranquilidad que me da al manejar</p>
+        </article>
+        <figure class="col-lg-6">
+            <video src="videos/video2.mp4" class="w-100 rounded" controls> </video>
+        </figure>
+    </div>
+</section>
+
+<div class="row py-5">
+    <h2 class="fw-bold text-center text-danger"> Musica para relajarse </h2>
+    <article class="col-lg-6 text-center py-4">
+        <audio controls class="w-100">
+            <source src="Audios/universfield-soft-ambient-atmosphere-140132.mp3" type="audio/mpeg">
+        </audio>
+    </article>
+
+</div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+     
+<footer class="container-fluid bg-danger text-light text-center">
+   <p class="py-3 h5">copyright 2026 Edwin Uriel SV</p>
+</footer>
+
+</html>
